@@ -4,35 +4,54 @@
 }
 
 body {
-    margin: 0;
+    margin: 0 auto;
     font-family: Avant Garde, sans-serif;
-    background-image: url(./images/owl_cave.png);
+    max-width: 1184px;
+    background-image: url(./images/welcome.jpeg);
 }
 
 .header {
     display: flex;
     flex-direction: row;
     position: relative;
+    justify-content: end;
+    padding-top: 40px;
+    align-items: center;
 }
 
-.coffe-counter {
+.counter-element {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+}   
 
+.counter-element:first-child {
+    margin-right: 25px;
 }
 
-.pie-counter {
+.counter-logo {
+    width: 50px;
+}
 
+.counter {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0;
+    padding-top: 10px;
+    text-shadow: 1px 1px 0 #47ff52, -1px -1px 0 #47ff52, 1px -1px 0 #47ff52, -1px 1px 0 #47ff52, 0px 1px 0 #47ff52, 1px 0px 0 #47ff52, 0px -1px 0 #47ff52, -1px 0px 0 #47ff52, 4px 2px 0 #333;
+    color: #644647;
 }
 
 .container {
     display: flex;
     position: relative;
-    justify-content: center;
     flex-direction: column;
     align-items: center;
 }
 
 .title {
-    margin: 56px 0;
+    margin: 56px 0 35px;
     font-size: 100px;
     font-weight: bold;
     color: #644647;
@@ -56,12 +75,11 @@ body {
 .button {
     width: 600px;
     height: 75px;
-    margin: 60px 0 25px;
+    margin: 45px 0 25px;
     border-radius: 10px;
     border: none;
     cursor: pointer;
-    background-color: #FFEBCD;
-    opacity: .8;
+    background-color: rgb(255, 235, 205, .8);
     font-size: 30px;
     font-weight: bold;
     color: #644647;
