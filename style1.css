@@ -1,0 +1,54 @@
+@font-face {
+    font-family: Avant Garde;
+    src: url(./font/ITC\ Avant\ Garde\ Demi\ SWA.ttf);
+}
+
+body {
+    margin: 0 auto;
+    font-family: Avant Garde, sans-serif;
+    max-width: 1184px;
+    background-image: url('./images/welcome.jpeg');
+    background-repeat: no-repeat;
+}
+
+.title {
+    margin: 56px 0 0;
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    color: #644647;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 0 #47ff52, -1px -1px 0 #47ff52, 1px -1px 0 #47ff52, -1px 1px 0 #47ff52, 0px 1px 0 #47ff52, 1px 0px 0 #47ff52, 0px -1px 0 #47ff52, -1px 0px 0 #47ff52, 4px 2px 0 #333;
+}
+
+.counter-elements {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: end;
+}
+
+.counter-element {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+}   
+
+.counter-element:first-child {
+    margin-right: 25px;
+}
+
+.counter-logo {
+    width: 50px;
+}
+
+.counter {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+    padding-top: 10px;
+    text-shadow: 1px 1px 0 #47ff52, -1px -1px 0 #47ff52, 1px -1px 0 #47ff52, -1px 1px 0 #47ff52, 0px 1px 0 #47ff52, 1px 0px 0 #47ff52, 0px -1px 0 #47ff52, -1px 0px 0 #47ff52, 4px 2px 0 #333;
+    color: #644647;
+}

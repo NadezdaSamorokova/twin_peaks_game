@@ -7,15 +7,26 @@ body {
     margin: 0 auto;
     font-family: Avant Garde, sans-serif;
     max-width: 1184px;
-    background-image: url(./images/welcome.jpeg);
+    background-image: url('./images/welcome.jpeg');
+    background-repeat: no-repeat;
 }
 
-.header {
+.title {
+    margin: 56px 0 35px;
+    font-size: 100px;
+    font-weight: bold;
+    text-align: center;
+    color: #644647;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 0 #47ff52, -1px -1px 0 #47ff52, 1px -1px 0 #47ff52, -1px 1px 0 #47ff52, 0px 1px 0 #47ff52, 1px 0px 0 #47ff52, 0px -1px 0 #47ff52, -1px 0px 0 #47ff52, 4px 2px 0 #333;
+}
+
+/*.counter-elements {
     display: flex;
     flex-direction: row;
     position: relative;
-    justify-content: end;
-    padding-top: 40px;
+    align-self: end;
     align-items: center;
 }
 
@@ -35,12 +46,19 @@ body {
 }
 
 .counter {
-    font-size: 30px;
+    font-size: 20px;
     font-weight: bold;
     margin: 0;
     padding-top: 10px;
     text-shadow: 1px 1px 0 #47ff52, -1px -1px 0 #47ff52, 1px -1px 0 #47ff52, -1px 1px 0 #47ff52, 0px 1px 0 #47ff52, 1px 0px 0 #47ff52, 0px -1px 0 #47ff52, -1px 0px 0 #47ff52, 4px 2px 0 #333;
     color: #644647;
+}*/
+
+.text-elements {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-top: 40px;
 }
 
 .container {
@@ -48,16 +66,8 @@ body {
     position: relative;
     flex-direction: column;
     align-items: center;
-}
-
-.title {
-    margin: 56px 0 35px;
-    font-size: 100px;
-    font-weight: bold;
-    color: #644647;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    text-shadow: 1px 1px 0 #47ff52, -1px -1px 0 #47ff52, 1px -1px 0 #47ff52, -1px 1px 0 #47ff52, 0px 1px 0 #47ff52, 1px 0px 0 #47ff52, 0px -1px 0 #47ff52, -1px 0px 0 #47ff52, 4px 2px 0 #333;
+    width: 1100px;
+    margin: 0 auto;
 }
 
 .mission {
@@ -82,8 +92,12 @@ body {
     background-color: rgb(255, 235, 205, .8);
     font-size: 30px;
     font-weight: bold;
-    color: #644647;
     letter-spacing: 1px;
     text-transform: uppercase;
     text-shadow: 1px 1px 0 #47ff52, -1px -1px 0 #47ff52, 1px -1px 0 #47ff52, -1px 1px 0 #47ff52, 0px 1px 0 #47ff52, 1px 0px 0 #47ff52, 0px -1px 0 #47ff52, -1px 0px 0 #47ff52, 4px 2px 0 #333;
+}
+
+.link {
+    text-decoration: none;
+    color: #644647;
 }
