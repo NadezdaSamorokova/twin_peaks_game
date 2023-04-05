@@ -6,7 +6,9 @@ class Game {
 		this.playerImage
 		this.obstacles = []
 		this.coffeeImage
-       /* this.pieImage*/
+        this.enemies = []
+        this.enemy
+        this.gameOver
 	}
 
 	preload() {
@@ -17,30 +19,41 @@ class Game {
 
 		this.playerImage = loadImage("../images/cooper.gif")
 		this.coffeeImage = loadImage("../images/coffee.png")
-        /*this.pieImage = loadImage("../images/pie.png")*/
+        this.enemy = loadImage("../images/owl.gif")
+        this.gameOver = loadImage("../images/game_over.png")
 	}
 
 	draw() {
 		clear()
 		this.background.draw()
 		this.player.draw()
-
-		// Every x frames we want to push a new coin into the array 
+ 
 		if (frameCount % 90 === 0) {
 			this.obstacles.push(new Obstacle(this.coffeeImage))
 		}
 
-    // Draw the obstacles
 		this.obstacles.forEach(function (obstacle) {
 			obstacle.draw()
 		})
 
-    // Filter the coins which are out of the canvas or had a collision
-		// We need an arrow function here, so that "this" has the right context (of the game object)
 		this.obstacles = this.obstacles.filter(obstacle => {
-			console.log(this)
-
 			if (obstacle.collision(this.player) || obstacle.x < 0 - obstacle.width) {
+				return false
+			} else {
+				return true
+			}
+		})
+
+        if (frameCount % 240 === 0) {
+			this.enemies.push(new Enemy(this.enemy))
+		}
+
+        this.enemies.forEach(function (element) {
+			element.draw()
+		})
+
+        this.enemies = this.enemies.filter(element => {
+			if (element.collision(this.player) || element.x < 0 - element.width) {
 				return false
 			} else {
 				return true

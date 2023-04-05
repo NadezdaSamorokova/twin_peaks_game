@@ -7,7 +7,7 @@ function preload() {
 
 // Setup game
 function setup() {
-	createCanvas(800, 500);
+    createCanvas(800, 500);
 }
 
 function draw() {
@@ -17,5 +17,13 @@ function draw() {
 function keyPressed() {
 	if (keyCode === 38) {
 		game.player.jump()
+	}
+
+    if (keyCode === 39) {
+		game.player.walkForward()
+	}
+
+    if (keyCode === 37) {
+		game.player.walkBack()
 	}
 }
