@@ -15,8 +15,8 @@ class Game {
 
 	preload() {
 		this.backgroundImages = [
-			{ src: loadImage("../images/owl_cave.png"), x: 0, speed: 0 },
-			{ src: loadImage("../images/background_lodge.png"), x: 0, speed: 1 },
+			{ src: loadImage("../twin_peaks_game/images/owl_cave.png"), x: 0, speed: 0 },
+			{ src: loadImage("../twin_peaks_game/images/background_lodge.png"), x: 0, speed: 1 },
 		]
 
 		this.playerImage = loadImage("../images/cooper.gif")
