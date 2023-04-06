@@ -10,10 +10,12 @@ function setup() {
     createCanvas(800, 500);
 }
 
+//game display
 function draw() {
 	game.draw()
 }
 
+//play buttons functionality
 function keyPressed() {
 	if (keyCode === 38) {
 		game.player.jump()

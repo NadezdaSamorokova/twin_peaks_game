@@ -6,12 +6,13 @@ class Obstacle {
 		this.width = 50
 		this.height = 50
 	}
-
+    //conditions to display the coffee-obsticle 
 	draw() {
 		this.x -= 4
 		image(this.image, this.x, this.y, this.width, this.height)
 	}
 
+    //condition to count the score for the player
 	collision(playerInfo) {
 		
 		let obstacleX = this.x + this.width / 2

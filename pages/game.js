@@ -13,6 +13,7 @@ class Game {
         this.resetInfo
 	}
 
+//preload all the pictures for the game
 	preload() {
 		this.backgroundImages = [
 			{ src: loadImage("images/owl_cave.png"), x: 0, speed: 0 },
@@ -32,6 +33,7 @@ class Game {
 		this.background.draw()
 		this.player.draw()
  
+        //draw the obsticle and the enemy opirance frequency
 		if (frameCount % 90 === 0) {
 			this.obstacles.push(new Obstacle(this.coffeeImage))
 		}
@@ -64,8 +66,9 @@ class Game {
 			}
 		})
 
-        if (this.player.score === 2) {
-            image(game.youWon, 155, 100, 500, 300) 
+        //main condition to wining the game
+        if (this.player.score === 10) {
+            image(game.youWon, 100, 45, 600, 410) 
             noLoop()
 
             return true

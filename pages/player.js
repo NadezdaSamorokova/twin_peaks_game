@@ -9,6 +9,7 @@ class Player {
 		this.score = 0
 	}
 
+    //conditions for the player figure to stay in the canvas and don't "walk away" from the field 
 	draw() {
 		this.velocity += this.gravity;
 		this.y += this.velocity;
@@ -28,12 +29,14 @@ class Player {
 		image(game.playerImage, this.x, this.y, this.width, this.height)
 	}
 
+    // jump condititon. Making sure that there is only one jump at the time of pressing the button
 	jump() {
         if (this.y === height - this.height) {
             this.velocity = - 10;
         }
 	}
 
+    //moving of the player forward and back
     walkForward() {
         this.x += 20;
     }

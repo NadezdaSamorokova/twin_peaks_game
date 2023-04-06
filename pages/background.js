@@ -1,3 +1,4 @@
+//making the curtaines background float
 class Background {
 	draw() {
 		game.backgroundImages.forEach(function (img) {

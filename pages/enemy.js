@@ -12,6 +12,7 @@ class Enemy {
 		image(this.image, this.x, this.y, this.width, this.height)
 	}
 
+//making the rule, that the player and the enemy should meet in the midle for collision to happen    
     collision(playerInfo) {
         let enemyX = this.x + this.width / 2
 		let enemyY = this.y + this.height / 2
@@ -21,10 +22,8 @@ class Enemy {
 
         if (dist(enemyX, enemyY, playerX, playerY) > 70) {
             return false;
-        } else {  
-            image(game.gameOver, 170, 100, 450, 300) 
-            image(game.resetInfo, 250, 30, 280, 50)
-            
+        } else {    //show the game Over if the collision betwiin the "body" of the player and the enemy is more than 70%
+            image(game.gameOver, 100, 18, 600, 467) 
             noLoop()
 
             return true
