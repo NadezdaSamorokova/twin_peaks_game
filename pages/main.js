@@ -26,4 +26,8 @@ function keyPressed() {
     if (keyCode === 37) {
 		game.player.walkBack()
 	}
+
+    if (keyIsDown(ENTER)) {
+        location.reload()
+    }
 }

@@ -22,43 +22,15 @@ body {
     text-shadow: 1px 1px 0 #47ff52, -1px -1px 0 #47ff52, 1px -1px 0 #47ff52, -1px 1px 0 #47ff52, 0px 1px 0 #47ff52, 1px 0px 0 #47ff52, 0px -1px 0 #47ff52, -1px 0px 0 #47ff52, 4px 2px 0 #333;
 }
 
-/*.counter-elements {
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    align-self: end;
-    align-items: center;
-}
-
-.counter-element {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    align-items: center;
-}   
-
-.counter-element:first-child {
-    margin-right: 25px;
-}
-
-.counter-logo {
-    width: 50px;
-}
-
-.counter {
-    font-size: 20px;
-    font-weight: bold;
-    margin: 0;
-    padding-top: 10px;
-    text-shadow: 1px 1px 0 #47ff52, -1px -1px 0 #47ff52, 1px -1px 0 #47ff52, -1px 1px 0 #47ff52, 0px 1px 0 #47ff52, 1px 0px 0 #47ff52, 0px -1px 0 #47ff52, -1px 0px 0 #47ff52, 4px 2px 0 #333;
-    color: #644647;
-}*/
-
 .text-elements {
     display: flex;
     flex-direction: column;
     position: relative;
     padding-top: 40px;
+}
+
+.text-elements:first-child {
+    width: 850px;
 }
 
 .container {

@@ -9,6 +9,8 @@ class Game {
         this.enemies = []
         this.enemy
         this.gameOver
+        this.youWon
+        this.resetInfo
 	}
 
 	preload() {
@@ -21,6 +23,8 @@ class Game {
 		this.coffeeImage = loadImage("../images/coffee.png")
         this.enemy = loadImage("../images/owl.gif")
         this.gameOver = loadImage("../images/game_over.png")
+        this.youWon = loadImage("../images/you_win.png")
+        this.resetInfo = loadImage("../images/reset-info.png")
 	}
 
 	draw() {
@@ -59,5 +63,12 @@ class Game {
 				return true
 			}
 		})
+
+        if (this.player.score === 2) {
+            image(game.youWon, 155, 100, 500, 300) 
+            noLoop()
+
+            return true
+        }
 	}
 }

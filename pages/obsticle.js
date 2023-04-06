@@ -2,10 +2,9 @@ class Obstacle {
 	constructor(image) {
 		this.image = image
 		this.x = width
-        this.y = (Math.random() * height) / 1.5
+        this.y = (Math.random() * height) / 1.5;
 		this.width = 50
 		this.height = 50
-		this.velocity = 3
 	}
 
 	draw() {
@@ -29,6 +28,6 @@ class Obstacle {
 			document.querySelector(".coffee-counter").innerText = playerInfo.score
 			
 			return true
-		}
+		} 
 	}
 }

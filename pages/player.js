@@ -10,27 +10,35 @@ class Player {
 	}
 
 	draw() {
-		this.velocity += this.gravity
-		this.y += this.velocity
+		this.velocity += this.gravity;
+		this.y += this.velocity;
 
-		// If y is lower than the top left corner of bb8 we need to set its value to the starting value
-		if (this.y >= 500 - this.height) {
+        if (this.y >= 500 - this.height) {
 			this.y = 500 - this.height
 		}
 
+        if (this.x < 0) {
+            this.x += this.velocity;
+        }
+
+        if (this.x >= width - this.width) {
+            this.x -= this.velocity;
+        }
 
 		image(game.playerImage, this.x, this.y, this.width, this.height)
 	}
 
 	jump() {
-		this.velocity = - 10
+        if (this.y === height - this.height) {
+            this.velocity = - 10;
+        }
 	}
 
     walkForward() {
-        this.x += 20
+        this.x += 20;
     }
 
     walkBack() {
-        this.x -= 20
+        this.x -= 20;
     }
 }

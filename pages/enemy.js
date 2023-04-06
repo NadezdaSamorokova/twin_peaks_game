@@ -2,7 +2,7 @@ class Enemy {
     constructor(image) {
         this.image = image;
         this.x = width;
-        this.y = (Math.random() * height) / 1.4
+        this.y = (Math.random() * height) / 1.4;
         this.width = 100;
         this.height = 100;
     }
@@ -19,14 +19,12 @@ class Enemy {
 		let playerX = playerInfo.x + playerInfo.width / 2
 		let playerY = playerInfo.y + playerInfo.height / 2
 
-        if (dist(enemyX, enemyY, playerX, playerY) > 50) {
+        if (dist(enemyX, enemyY, playerX, playerY) > 70) {
             return false;
         } else {  
-            image(game.gameOver, 100, 100, 400, 300) 
-
-           /* fill("red")
-            textSize(30)
-            text("I see you again in 25 years", 260, 300)*/
+            image(game.gameOver, 170, 100, 450, 300) 
+            image(game.resetInfo, 250, 30, 280, 50)
+            
             noLoop()
 
             return true
