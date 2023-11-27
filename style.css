@@ -4,11 +4,16 @@
 }
 
 body {
-    margin: 0 ;
+    margin: 0 auto;
+    height: 100vh;
+    max-width: 1184px;
     font-family: Avant Garde, sans-serif;
-    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-image: url('./images/welcome.jpeg');
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .title {
