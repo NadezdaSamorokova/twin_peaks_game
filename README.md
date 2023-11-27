@@ -1,6 +1,6 @@
 # Twin Peaks Game
 
-Game based on the show Twin Peaks. Statisc jump and coolect game with no responsive design. With attend to apdate it. All images and sounds are used for the learning purposes only.
+Statisc jump and collect web game based on the show Twin Peaks. All images are used for the learning purposes only.
 
 ## Used technologies
 
